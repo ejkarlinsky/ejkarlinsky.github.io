@@ -29,8 +29,8 @@
       { el: '#okta-login-container' },
       function (res) {
         if (res.status === 'SUCCESS') { 
-          res.session.setCookieAndRedirect(redirectUrl);
           this.user = res.claims.email;
+          res.session.setCookieAndRedirect(redirectUrl);
            }
       }
     );
