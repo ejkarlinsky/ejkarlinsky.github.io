@@ -1,0 +1,59 @@
+h1 {
+	font-family:	"Helvetica Neue", Helvetica, sans-serif;
+	font-size: 		1.25rem;
+	color:			"grey";
+	margin:			0;
+}
+p {
+	font-family:		"Helvetica Neue", Helvetica, sans-serif;
+	font-size: 			1.0rem;
+	color:				black;
+	margin:				0;
+	border-color:		black;
+	border-width: 		1;
+	padding: 			3;
+}
+a {
+	font-family:		"Helvetica Neue", Helvetica, sans-serif;
+	font-size: 			1.0rem;
+	font-style: 		normal;
+	text-decoration: 	none;
+	color:				#fbfbfb;
+	margin:				0;
+}
+a:hover {
+	color:	#4f87c0;
+}
+
+.blockLinkWhite
+{
+	display: block;
+	padding: 5px;
+	/*background-color: #4f87c0;*/
+}
+
+.main {
+	
+}
+
+.site-header {
+	background-color: 'grey';
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/ian-simmonds-124054-small.jpg);
+	float: left;
+}
+
+
+/*
+Pallette:
+#4f87c0 - Blue
+#fbfbfb - Off White
+#f4d45c - Yellow
+#b2b2e5 - Purple
+#949495 - Grey
+
+*/
