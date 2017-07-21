@@ -29,13 +29,17 @@
       { el: '#okta-login-container' },
       function (res) {
         if (res.status === 'SUCCESS') { 
-          this.user = res.claims.email;
-          // res.session.setCookieAndRedirect(redirectUrl);
+          this.user = res.claims.login;
+          res.session.setCookieAndRedirect(redirectUrl);
+           }
+           else {
+            this.user = res.status;
            }
       }
     );
 
     document.getElementById("output").innerHTML = this.user;
+
   </script>
 </body>
 </html>
