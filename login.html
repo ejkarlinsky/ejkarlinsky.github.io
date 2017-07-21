@@ -18,12 +18,13 @@
   <!-- Script to init the widget -->
   <script>
     var orgUrl = 'https://karlinskys.okta.com';
+    var redirectUrl = 'https://www.karlinskys.com/signed-in.html';
     var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 
     oktaSignIn.renderEl(
       { el: '#okta-login-container' },
       function (res) {
-        if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect(orgUrl); }
+        if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect(redirectUrl); }
       }
     );
   </script>
