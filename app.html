@@ -30,7 +30,7 @@
       function (res) {
         if (res.status === 'SUCCESS') { 
           this.user = res.claims.email;
-          res.session.setCookieAndRedirect(redirectUrl);
+          // res.session.setCookieAndRedirect(redirectUrl);
            }
       }
     );
